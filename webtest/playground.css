@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+:root {
+	--count-dist1: 0.3em;
+	--quant: 2;
+	--size: 3;
+}
+
+/* heading counter */
+h1 {
+	counter-increment: headings;
+	counter-reset: subhead;
+}
+
+h1::before {
+	content: counter(headings) ".";
+	padding-right: var(--count-dist1);
+}
+
+h2 {
+	counter-increment: subhead;
+}
+
+h2::before {
+	content: counter(headings) "." counter(subhead) ".";
+	padding-right: var(--count-dist1);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+.emoji {
+	height: 1.2em;
+	width: auto;
+	vertical-align: text-bottom;
+}
+
+.gradient-text {
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		42deg,
+		rgb(58, 121, 180) 16%,
+		rgb(66, 253, 29) 55%,
+		rgba(252, 176, 69, 1) 100%
+	);
+	background-clip: text;
+	color: transparent;
+}
+
+/*css selectors: links*/
+a:link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+	color: pink;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+}
+a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/* smooth scrolling when clicking on bookmark links */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #02040c;
+	background-image: radial-gradient(
+		#111 calc(var(--quant) * var(--size) * 1%),
+		transparent calc(var(--quant) * var(--size) * 1%)
+	);
+	background-size: calc(1 / var(--quant) * 100px) calc(1 / var(--quant) * 100px);
+	background-position: 0 0;
+	background-attachment: fixed;
+	color: white;
+	font-family: "Lexend";
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!--* meta tags for bots -->
+		<meta name="keywords" content="HTML, learning, testing" />
+		<meta name="description" content="website for testing html" />
+		<meta name="author" content="Ben Dover" />
+
+		<!--* open graph / twitter card social media embed tags -->
+		<meta name="og:site_name" content="✨ awesome website ✨" />
+		<meta name="og:title" content="various html elements" />
+		<meta name="og:description" content="website for testing html" />
+		<meta name="og:type" content="website" />
+		<meta
+			name="og:image"
+			content="https://www.w3.org/html/logo/img/html5-topper.png"
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="theme-color" content="#3d00b4" />
+
+		<!--* the ez fix for all devices™️ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://avatars.githubusercontent.com/u/141683447"
+		/>
+		<title>various html elements</title>
+		<link rel="stylesheet" href="html-elements.css" />
+		<style>
+			table,
+			th,
+			td {
+				border: 1px dotted lightblue;
+				border-collapse: collapse;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="top">
+			<p>header</p>
+		</header>
+
+		<nav class="color2">
+			navbar with <a class="color2" href="https://loops.tk">link to loops</a>
+		</nav>
+
+		<main class="color1">
+			<h1>heading 1</h1>
+			<h2>heading 2</h2>
+			<h3>heading 3</h3>
+			<p>
+				text<br />
+				cat emoji
+				<img
+					class="emoji"
+					src="https://cdn-icons-png.flaticon.com/512/616/616430.png"
+					alt="cat emoji"
+				/>
+				wow!
+			</p>
+			<p title="whatup lol">more text (hover me!)</p>
+			<hr />
+			<p><code>010110069 code</code></p>
+			<p>Display keyboard input like <kbd>Ctrl + R</kbd></p>
+			<p>
+				<samp>or sample program output</samp>
+			</p>
+			<p>or even <var>variables</var></p>
+			<p class="color2">
+				This is
+				<b>bold</b>
+				<strong>important</strong>
+				<i>italic</i>
+				<em>emphasized</em>
+				<small>small</small>
+				<mark>marked</mark>
+				<del>deleted</del>
+				<ins>inserted</ins>
+				<sub>subscripted</sub>
+				<sup>superscripted</sup>
+				text.
+			</p>
+			<blockquote cite="https://i-made-it-tf-up.com">
+				block quotes are usually a lot of text, indeted by browsers.
+			</blockquote>
+			<p>
+				there are also short quotes: <q>browsers insert quotation marks.</q>
+			</p>
+			<p>
+				you can also use &lt;<abbr title="Abbreviation">abbr</abbr>&gt; for
+				abbreviations.
+			</p>
+			<address>this is an address. it gets rendered italic.</address>
+			<p>you can also <cite>cite stuff</cite>. also italic.</p>
+			<p><bdo dir="rtl">reverse text like arabic lol</bdo></p>
+			<table style="width: 25em">
+				<colgroup>
+					<col span="2" style="background-color: #031d1d" />
+					<col span="2" style="background-color: #03131d" />
+					<col span="2" style="background-color: #03071d" />
+				</colgroup>
+				<tr>
+					<th style="width: 30%">there</th>
+					<th rowspan="2">are</th>
+					<th>also</th>
+					<th style="width: 30%">tables</th>
+					<th colspan="2">!</th>
+				</tr>
+				<tr>
+					<th>they</th>
+					<td>awful</td>
+					<td>to</td>
+					<td>code</td>
+					<td>:D</td>
+				</tr>
+			</table>
+			<div style="display: flex">
+				<ul style="list-style-type: square">
+					<li>this is a</li>
+					<ul>
+						<li>nested</li>
+					</ul>
+					<li>unordered list</li>
+					<li>with squares</li>
+				</ul>
+				<ol>
+					<li>this is a</li>
+					<ol>
+						<li>nested</li>
+					</ol>
+					<li>ordered</li>
+					<li>list</li>
+				</ol>
+			</div>
+			<dl>
+				<dt>description lists are also a thing</dt>
+				<dd>you can describe stuff there</dd>
+			</dl>
+			<aside>
+				aside can be used for sidebars or say / display something unrelated.
+				<br />
+				<figure>
+					<figcaption>figure / figcaptions are self explanatory</figcaption>
+				</figure>
+			</aside>
+
+			<h1>Forms!</h1>
+			<form action="/action.php" target="resp" method="get">
+				<fieldset>
+					<legend>Form testing</legend>
+					<label for="t-input">Text input:</label><br />
+					<input
+						type="text"
+						id="t-input"
+						name="t-input"
+						value="John"
+						readonly
+					/><br />
+					<textarea name="message" rows="2" cols="30" maxlength="4">
+textarea for more text</textarea
+					><br />
+					<label for="pwd">Password:</label>
+					<input type="password" id="pwd" name="pwd" placeholder="" /><br />
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" /><br />
+					<label for="search">Search:</label>
+					<input type="search" id="search" name="search" disabled /><br />
+					<label for="phone">Phone:</label>
+					<input
+						type="tel"
+						id="phone"
+						name="phone"
+						pattern="[0-9]{13}"
+						placeholder="13 digit number"
+					/><br />
+					<label for="url-i">URL input:</label>
+					<input type="url" id="url-i" name="url-i" required /><br /><br />
+
+					<input type="radio" id="rb1" name="rb" value="radio" />
+					<label for="rb1">Radio</label>
+					<input type="radio" id="rb2" name="rb" value="buttons" />
+					<label for="rb2">Buttons!</label><br />
+
+					<input type="checkbox" id="cb1" name="cb" value="check" />
+					<label for="cb1">Check</label>
+					<input type="checkbox" id="cb2" name="cb" value="boxes" />
+					<label for="cb2">Boxes!</label><br /><br />
+
+					<label for="dd">Dropdown</label>
+					<select id="dd" name="dd">
+						<option value="o1">option 1</option>
+						<option value="o2">option 2</option>
+						<option value="o3">option 3</option></select
+					><br />
+
+					<label for="file">Select a file:</label>
+					<input type="file" id="file" name="file" multiple /><br />
+
+					<input
+						type="number"
+						id="quantity"
+						name="quantity"
+						min="1"
+						max="9"
+						value="3"
+						step="2"
+					/>
+					<input
+						type="range"
+						id="vol"
+						name="vol"
+						min="0"
+						max="50"
+						value="10"
+						step="5"
+					/><br />
+
+					<label for="clr">Color:</label>
+					<input type="color" id="clr" name="color" /><br />
+
+					<label for="date">Date / time forms:</label>
+					<input type="date" id="date" name="date" />
+					<input type="datetime-local" id="datetime" name="datetime" />
+					<input type="time" id="time" name="time" />
+					<br />
+
+					<input type="submit" value="Submit Form" />
+					<input type="reset" value="Reset form" />
+					<input
+						type="button"
+						onclick="alert('Hello World!')"
+						value="Click Me!"
+					/>
+				</fieldset>
+			</form>
+
+			<h1>Multimedia!</h1>
+			<video width="320" height="240" controls autoplay muted loop>
+				<source
+					src="https://www.w3schools.com/html/movie.mp4"
+					type="video/mp4"
+				/>
+				<source
+					src="https://www.w3schools.com/html/movie.ogg"
+					type="video/ogg"
+				/>
+				Your browser does not support the video tag.
+			</video>
+			<audio controls>
+				<source
+					src="https://www.w3schools.com/html/horse.ogg"
+					type="audio/ogg"
+				/>
+				<source
+					src="https://www.w3schools.com/html/horse.mp4"
+					type="audio/mpeg"
+				/>
+				Your browser does not support the audio element.
+			</audio>
+
+			<iframe
+				src="https://example.com/"
+				style="border: none"
+				name="resp"
+			></iframe>
+			<embed src="https://example.com/" />
+			<object data="https://example.com/">
+				Seems like the content failed to load!
+			</object>
+		</main>
+
+		<footer>
+			<p>footer <a href="#top">back to top</a></p>
+		</footer>
+	</body>
+</html>

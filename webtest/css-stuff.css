@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend&display=swap&effect=anaglyph|3d");
+
+body {
+	background-color: black;
+	background-image: linear-gradient(
+		45deg,
+		rgb(255, 0, 0) 0%,
+		rgb(255, 154, 0) 10%,
+		rgb(208, 222, 33) 20%,
+		rgb(79, 220, 74) 30%,
+		rgb(63, 218, 216) 40%,
+		rgb(47, 201, 226) 50%,
+		rgb(28, 127, 238) 60%,
+		rgb(95, 21, 242) 70%,
+		rgb(186, 12, 248) 80%,
+		rgb(251, 7, 217) 90%,
+		rgb(255, 0, 0) 100%
+	);
+	background-repeat: no-repeat;
+	background-size: 100vw 10px;
+	color: white;
+	font-family: "Lexend";
+	font-size: 130%;
+}
+
+/*colors explanation*/
+p.colors span {
+	margin: 0 1ch;
+}
+p.colors span:nth-of-type(1) {
+	color: rebeccapurple;
+}
+p.colors span:nth-of-type(2) {
+	color: #663399ff;
+}
+p.colors span:nth-of-type(3) {
+	color: rgba(102, 51, 153, 1);
+}
+p.colors span:nth-of-type(4) {
+	color: hsla(270, 50%, 40%, 1);
+}
+
+/*border example*/
+.border {
+	border-style: dotted dashed solid double;
+	border-color: red green blue yellow;
+	border-radius: 10px 7px 20px 5px;
+	border-width: 2px 4px;
+	padding: 10px;
+}
+
+/*box model example*/
+.box-model-bg {
+	background-color: lime;
+	display: inline-flex;
+}
+.box-model {
+	outline: dashed black 5px;
+	border: solid red 3px;
+	background-color: yellow;
+	outline-offset: 2px;
+	padding: 10px;
+	margin: 20px;
+	width: 12em;
+	box-sizing: border-box; /*padding + border = width*/
+}
+.box-model-text {
+	background-color: blue;
+}
+
+/*css text example*/
+.css-text {
+	width: 25em;
+	border: dashed red 1px;
+	padding: 10px;
+	margin: 10px;
+}
+p.l {
+	text-align: left;
+}
+p.c {
+	text-align: center;
+}
+p.r {
+	text-align: right;
+}
+p.j {
+	text-align: justify;
+}
+p.rtl {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+p.d {
+	text-decoration-line: overline line-through underline;
+	text-decoration-style: dashed;
+	text-decoration-color: blueviolet;
+	text-decoration-thickness: 0.1em;
+}
+p.low {
+	text-transform: lowercase;
+}
+p.up {
+	text-transform: uppercase;
+}
+p.cap {
+	text-transform: capitalize;
+}
+p.sc {
+	font-variant: small-caps;
+}
+p.ls {
+	letter-spacing: 2px;
+}
+p.ws {
+	word-spacing: 10px;
+}
+p.lh {
+	line-height: 1.5;
+}
+p.ts {
+	text-shadow: 1px 2px 4px hsl(184, 100%, 50%),
+		-1px -2px 4px hsl(295, 100%, 50%);
+}
+p.ms {
+	font-family: monospace;
+}
+p.sf {
+	font-family: serif;
+}
+p.b {
+	font-weight: bold;
+}
+p.i {
+	font-style: italic;
+}
+
+/*cursor styles example*/
+.cursor {
+	display: inline-block;
+	margin: 2px 0;
+	border: 1px solid rgb(36, 36, 36);
+}
+.auto {
+	cursor: auto;
+}
+.default {
+	cursor: default;
+}
+.none {
+	cursor: none;
+}
+.context-menu {
+	cursor: context-menu;
+}
+.help {
+	cursor: help;
+}
+.pointer {
+	cursor: pointer;
+}
+.progress {
+	cursor: progress;
+}
+.wait {
+	cursor: wait;
+}
+.cell {
+	cursor: cell;
+}
+.crosshair {
+	cursor: crosshair;
+}
+.text {
+	cursor: text;
+}
+.vertical-text {
+	cursor: vertical-text;
+}
+.alias {
+	cursor: alias;
+}
+.copy {
+	cursor: copy;
+}
+.move {
+	cursor: move;
+}
+.no-drop {
+	cursor: no-drop;
+}
+.not-allowed {
+	cursor: not-allowed;
+}
+.grab {
+	cursor: grab;
+}
+.grabbing {
+	cursor: grabbing;
+}
+.all-scroll {
+	cursor: all-scroll;
+}
+.col-resize {
+	cursor: col-resize;
+}
+.row-resize {
+	cursor: row-resize;
+}
+.n-resize {
+	cursor: n-resize;
+}
+.e-resize {
+	cursor: e-resize;
+}
+.s-resize {
+	cursor: s-resize;
+}
+.w-resize {
+	cursor: w-resize;
+}
+.ne-resize {
+	cursor: ne-resize;
+}
+.nw-resize {
+	cursor: nw-resize;
+}
+.se-resize {
+	cursor: se-resize;
+}
+.sw-resize {
+	cursor: sw-resize;
+}
+.ew-resize {
+	cursor: ew-resize;
+}
+.ns-resize {
+	cursor: ns-resize;
+}
+.nesw-resize {
+	cursor: nesw-resize;
+}
+.nwse-resize {
+	cursor: nwse-resize;
+}
+.zoom-in {
+	cursor: zoom-in;
+}
+.zoom-out {
+	cursor: zoom-out;
+}
+.custom {
+	cursor: url("cursor-mini.gif") 1 17, auto;
+}
