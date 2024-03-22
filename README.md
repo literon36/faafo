@@ -1,5 +1,5 @@
 # faafo: Fuck Around And Find Out.
-This is literally just a playground repo where I test out various things.
+This is literally just a playground repo where I test out & learn various things.
 
 ## Q&A
 Q: Why???

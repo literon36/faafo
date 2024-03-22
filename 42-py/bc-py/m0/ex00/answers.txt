@@ -1,0 +1,14 @@
+Output a list of installed packages and their versions
+python -m pip list
+
+Show the package metadata of numpy
+python -m pip show numpy
+
+Remove the package numpy
+python -m pip uninstall numpy
+
+(Re)install the package numpy
+python -m pip install numpy
+
+Freeze python packages and their versions in requirements.txt
+python -m pip freeze > requirements.txt
