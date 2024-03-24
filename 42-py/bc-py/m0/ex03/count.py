@@ -14,7 +14,7 @@ def text_analyzer(text = None) -> None:
 # if the argument is not a string, an error message is printed
     elif not isinstance(text, str):
         print("The argument must be a string")
-        sys.exit()
+        sys.exit(1)
 
 # count upper case characters
     upper : int = 0

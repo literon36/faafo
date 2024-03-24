@@ -9,12 +9,12 @@ if len(sys.argv) == 1:
 # if more than two arguments are provided, print error
 if not len(sys.argv) == 3:
     print("Error: invalid number of arguments")
-    sys.exit()
+    sys.exit(1)
 
 # if the arguments are not numbers, print an error message
 if not sys.argv[1].isdigit() or not sys.argv[2].isdigit():
     print("Error: only numbers are allowed")
-    sys.exit()
+    sys.exit(1)
 
 a :int = int(sys.argv[1])
 b :int = int(sys.argv[2])

@@ -6,7 +6,7 @@ n : int = len(sys.argv)
 # if no arguments then return nothing
 if n == 1:
     print("Pass at least one argument")
-    sys.exit()
+    sys.exit(1)
 
 # if more than one argument, merge into string
 merged : str = ""

@@ -8,12 +8,12 @@ if len(sys.argv) == 1:
 # if more than one argument is provided, print error
 if len(sys.argv) > 2:
     print("Error: too many arguments")
-    sys.exit()
+    sys.exit(1)
 
 # if the argument is not an integer, print an error message
 if not sys.argv[1].isdigit():
     print("Error: argument is not a digit")
-    sys.exit()
+    sys.exit(1)
 
 # check if the argument is 0, even or odd
 if int(sys.argv[1]) == 0:
