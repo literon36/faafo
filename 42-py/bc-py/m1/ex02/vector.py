@@ -62,12 +62,41 @@ class Vector:
     def __repr__(self) -> str:
         return str(self.values)
 
+    def __eq__(self, other :object) -> bool:
+        if (
+            isinstance(other,       list) and len(other   ) > 0 and
+            isinstance(other[0],    list) and len(other[0]) > 0 and
+            isinstance(other[0][0], float)
+        ):
+            return self == Vector(other)
+        if not isinstance(other, Vector):
+            return False
+        if self.shape != other.shape:
+            return False
+        return self.values == other.values
+
+    def __ne__(self, other :object) -> bool:
+        return not self == other
+
 
 
     def dot(self :Vector, v2 :Vector) -> float:
         if self.shape != v2.shape:
             raise ValueError("Vectors must have the same shape")
-        return sum([self.values[i][j] * v2.values[i][j] for i in range(self.shape[0]) for j in range(self.shape[1])])
+        return sum([
+            self.values[i][j] * v2.values[i][j]
+            for i in range(self.shape[0])
+            for j in range(self.shape[1])
+        ])
 
     def T(self) -> Vector:
-        return Vector([[self.values[j][i] for j in range(self.shape[0])] for i in range(self.shape[1])])
+        result = Vector(
+            [
+                [
+                    self.values[j][i]
+                    for j in range(self.shape[0])
+                ]
+                for i in range(self.shape[1])
+            ]
+        )
+        return result
